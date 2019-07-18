@@ -29,7 +29,7 @@ pause
 LENGTH = 80
 
 # 变量，可修改的参数
-download_speed = "0"
+download_speed = "1248K"
 if getattr(sys, 'frozen', False): #是否打包
     aria2_path = os.path.join(sys._MEIPASS, "aria2c.exe")
     alipay_path = os.path.join(sys._MEIPASS, "Alipay.jpg")
@@ -40,9 +40,9 @@ aira2_cmd = '%s -x 16 -s 64 -j 64 -k 2M --max-overall-download-limit %s "{url:}"
 
 # 课程链接的正则匹配
 courses_re = {
-    "icourse163_mooc": re.compile(r'https?://www.icourse163.org/((learn)|(course))/(.*?)(#/.*)?$'), 
-    "icourse_cuoc": re.compile(r'https?://www.icourses.cn/web/sword/portal/videoDetail\?courseId=([\w-]*)'), 
-    "icourse_mooc": re.compile(r'((https?://www.icourses.cn/sCourse/course_(\d+).html)|'
+    "icourse163_mooc": re.compile(r'\s*https?://www.icourse163.org/((learn)|(course))/(.*?)(#/.*)?$'),
+    "icourse_cuoc": re.compile(r'\s*https?://www.icourses.cn/web/sword/portal/videoDetail\?courseId=([\w-]*)'), 
+    "icourse_mooc": re.compile(r'\s*((https?://www.icourses.cn/sCourse/course_(\d+).html)|'
                         r'(https?://www.icourses.cn/web/sword/portal/shareDetails\?cId=(\d+)))')
 }
 

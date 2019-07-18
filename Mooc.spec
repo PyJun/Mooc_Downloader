@@ -3,23 +3,7 @@
 block_cipher = None
 
 
-a = Analysis(['Mooc\\Mooc_Main.py',
-              'Mooc\\Mooc_Base.py',
-              'Mooc\\Mooc_Config.py',
-              'Mooc\\Mooc_Download.py',
-              'Mooc\\Mooc_Interface.py',
-              'Mooc\\Mooc_Potplayer.py',
-              'Mooc\\Mooc_Request.py',
-
-              'Mooc\\Icourses\\Icourse_Base.py',
-              'Mooc\\Icourses\\Icourse_Config.py',
-              'Mooc\\Icourses\\Icourse_Cuoc.py',
-              'Mooc\\Icourses\\Icourse_Mooc.py',
-
-              'Mooc\\Icourse163\\Icourse163_Base.py',
-              'Mooc\\Icourse163\\Icourse163_Config.py',
-              'Mooc\\Icourse163\\Icourse163_Mooc.py'
-              ],
+a = Analysis(['Mooc\\Mooc_Main.py'],
              pathex=['.'],
              binaries=[],
              datas=[
