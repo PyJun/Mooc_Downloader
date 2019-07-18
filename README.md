@@ -46,13 +46,13 @@ python -m Mooc
 
 ##### 6.打包指令
 
-1. 首先确保已经安装 **pyinstaller**，若未安装，则用 pip 安装
+1. 首先确保已经安装 **pyinstaller**，若未安装，则用 pip 安装，打开终端，输入：
 
    ```powershell
    pip install pyinstaller
    ```
 
-2. 然后在项目工程的根目录下，输入：
+2. 然后在项目工程的根目录下，终端输入：
 
    ```powershell
    pyinstaller Mooc.spec
