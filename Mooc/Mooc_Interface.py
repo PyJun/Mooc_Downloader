@@ -34,6 +34,7 @@ def mooc_interface():
             print('\t|\t\t\t  慕课视频下载器   \t\tQQ群: {:^27s} |'.format(__QQgroup__))
             print("\t|\t\t    icourse163.org, icourses.cn    \t邮箱: {:^27s} |".format(__email__))
             print("\t"+"="*91)
+            print("\t\t\tGithub: https://github.com/PyJun/Mooc_Downloader")
             print("\t\t\t博客: https://blog.csdn.net/qq_16166591/article/details/85249743")
             print("\t{:^84}".format("下载路径: "+PATH))
             urlstr = None
