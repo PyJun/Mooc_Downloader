@@ -52,7 +52,7 @@ python -m Mooc
    pip install pyinstaller
    ```
 
-2. 然后再项目工程的更目录下，输入：
+2. 然后在项目工程的根目录下，输入：
 
    ```powershell
    pyinstaller Mooc.spec
