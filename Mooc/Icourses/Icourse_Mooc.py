@@ -64,7 +64,7 @@ class Icourse_Mooc(Icourse_Base):
         match_str = r'<div[\s\S]*?id="collapse{}-{}"([\s\S]*?)</div>'
         re_pdf = re.compile(r'data-class="media"[\s\S]*?data-title="([\s\S]*?)"[\s\S]*?data-url="(.*?)"')
         for _id, name in zip(chapter_ids, chapter_names):
-            self.infos.append({'id': _id, 'name': winre.sub('',name), 'units': []})
+            self.infos.append({'id': _id, 'name': winre.sub('',name), 'units':[], 'pdfs':[]})
         for index, ptext in chapter_ptext:
             inx = int(index)-1
             pdfs = re_pdf.findall(ptext)
@@ -74,7 +74,7 @@ class Icourse_Mooc(Icourse_Base):
         for unit_id,unit_inx1, unit_inx2,unit_name in unit_list:
             inx1 = int(unit_inx1)-1
             inx2 = int(unit_inx2)-1
-            self.infos[inx1]['units'].append({'id': unit_id, 'name': winre.sub('',unit_name)})
+            self.infos[inx1]['units'].append({'id': unit_id, 'name': winre.sub('',unit_name), 'pdfs':[]})
             m_str = match_str.format(unit_inx1, unit_inx2)
             match_ptext = re.search(m_str, text2)
             if match_ptext:
@@ -129,7 +129,7 @@ class Icourse_Mooc(Icourse_Base):
 
     def _download(self):
         print('\n{:^{}s}'.format(self.title, LEN_S))
-        self.roorDir = rootDir = os.path.join(PATH, self.title)
+        self.rootDir = rootDir = os.path.join(PATH, self.title)
         if not os.path.exists(rootDir):
             os.mkdir(rootDir)
         Icourse_Base.potplayer.init(rootDir)

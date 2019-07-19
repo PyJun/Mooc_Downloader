@@ -7,8 +7,7 @@
 - 支持Mooc视频，字幕，课件下载，课程以目录树形式下载到硬盘，支持Potplayer播放
 - 支持中国大学慕课和爱课程二大慕课网站的视频课程下载，核心下载调用 Aria2c
 - 用户可以直接下载 Release 下的 [Setup-Mooc-3.4.0.exe](https://github.com/PyJun/Mooc_Downloader/releases)  安装即可使用
-- 有关下载器的使用，看功能演示的图片就懂了，也可以参考[我的博客](https://blog.csdn.net/qq_16166591/article/details/85249743)
-- 如果下载遇到问题，点击查看[Mooc下载器帮助文档](https://github.com/PyJun/Mooc_Downloader/wiki)
+- 有关下载器的使用以及相关问题，点击查看[Mooc下载器帮助文档](https://github.com/PyJun/Mooc_Downloader/wiki)
 
 ##### 2. 功能演示：
 
@@ -61,10 +60,4 @@ python -m Mooc
 3. 最后会在项目工程根目录下出现一个**dist**文件夹，该文件夹会出现一个**Mooc-3.4.0.exe**程序
 
 ![package.png](./图片/package.png)
-
-##### 7.如何打赏
-
-当然是用马云爸爸的支付宝咯，如果觉得下载器好用的话，扫码支持一下作者  (⊙_⊙)
-
-![Alipay.jpg](./Mooc/Alipay.jpg)
 
