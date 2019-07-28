@@ -48,7 +48,7 @@ class Icourse_Mooc(Icourse_Base):
         match_school = re.search(r'<span +class="pull-left">学校:</span>\s*<p +class="course-information-hour pull-left">(.*?)</p>', text)
         if match_name and match_school:
             title_name = match_name.group(1) + '__' + match_school.group(1)
-            self.title = winre.sub('', title_name)
+            self.title = winre.sub('', title_name)[:WIN_LENGTH]
 
     def _get_infos(self):
         if not self.cid:
@@ -64,23 +64,23 @@ class Icourse_Mooc(Icourse_Base):
         match_str = r'<div[\s\S]*?id="collapse{}-{}"([\s\S]*?)</div>'
         re_pdf = re.compile(r'data-class="media"[\s\S]*?data-title="([\s\S]*?)"[\s\S]*?data-url="(.*?)"')
         for _id, name in zip(chapter_ids, chapter_names):
-            self.infos.append({'id': _id, 'name': winre.sub('',name), 'units':[], 'pdfs':[]})
+            self.infos.append({'id': _id, 'name': winre.sub('',name)[:WIN_LENGTH], 'units':[], 'pdfs':[]})
         for index, ptext in chapter_ptext:
             inx = int(index)-1
             pdfs = re_pdf.findall(ptext)
-            pdf_list = [{'name':winre.sub('', pdf[0]), 'url':pdf[1]} for pdf in pdfs]
+            pdf_list = [{'name':winre.sub('', pdf[0])[:WIN_LENGTH], 'url':pdf[1]} for pdf in pdfs]
             self.infos[inx]['pdfs'] = pdf_list
         unit_list = re.findall(r'<a +class="chapter-body-content-text section-event-t no-load"[\s\S]*?data-secId="(\d+)"[\s\S]*?<span +class="chapter-s">(\d+)</span><span>.</span>\s*?<span +class="chapter-t">(\d+)</span>(.*?)</a>', text1)
         for unit_id,unit_inx1, unit_inx2,unit_name in unit_list:
             inx1 = int(unit_inx1)-1
             inx2 = int(unit_inx2)-1
-            self.infos[inx1]['units'].append({'id': unit_id, 'name': winre.sub('',unit_name), 'pdfs':[]})
+            self.infos[inx1]['units'].append({'id': unit_id, 'name': winre.sub('',unit_name)[:WIN_LENGTH], 'pdfs':[]})
             m_str = match_str.format(unit_inx1, unit_inx2)
             match_ptext = re.search(m_str, text2)
             if match_ptext:
                 ptext = match_ptext.group(1)
                 pdfs = re_pdf.findall(ptext)
-                pdf_list = [{'name':winre.sub('', pdf[0]), 'url':pdf[1]} for pdf in pdfs]
+                pdf_list = [{'name':winre.sub('', pdf[0])[:WIN_LENGTH], 'url':pdf[1]} for pdf in pdfs]
                 self.infos[inx1]['units'][inx2]['pdfs'] = pdf_list
 
     def _get_course_links(self, sid):

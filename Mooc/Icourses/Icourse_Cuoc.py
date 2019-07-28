@@ -39,7 +39,7 @@ class Icourse_Cuoc(Icourse_Base):
         match_school = re.search(r'<a +?class *?= *?"teacher-infor-from">(.*?)</a>', text)
         if match_title and match_school:
             title_name = match_title.group(1)+'__'+match_school.group(1)
-            self.title = winre.sub('', title_name)
+            self.title = winre.sub('', title_name)[:WIN_LENGTH]
 
     def _get_infos(self):
         if self.cid is None:
@@ -51,7 +51,7 @@ class Icourse_Cuoc(Icourse_Base):
         if match_courses:
             #!!! except json.decoder.JSONDecodeError
             courses = json.loads(match_courses.group(1))
-            self.infos = [{'url':course['fullLinkUrl'], 'name':course['title']} for course in courses]
+            self.infos = [{'url':course['fullLinkUrl'], 'name':winre.sub('',course['title'])[:WIN_LENGTH]} for course in courses]
 
     def _download(self):
         print('\n{:^{}s}'.format(self.title, LEN_S))

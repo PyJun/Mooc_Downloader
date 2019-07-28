@@ -15,6 +15,7 @@ if hasattr(sys, 'frozen'):
 else:
     PATH = os.path.dirname(os.path.abspath(__file__))  # 程序当前路径
 winre = re.compile(r'[?*|<>:"/\\\s]')  # windoes 文件非法字符匹配
+WIN_LENGTH = 64
 TIMEOUT = 60   # 请求超时时间
 PLAYLIST = '播放列表.dpl'
 PALYBACK = 'DPL_PYJUN'
@@ -48,7 +49,7 @@ courses_re = {
 
 __all__ = [
     "__QQgroup__", "__email__", "PATH", "winre", "TIMEOUT", "PLAYLIST", "PALYBACK", 
-    "BATNAME", "BATSTRING", "LENGTH",
+    "BATNAME", "BATSTRING", "LENGTH", "WIN_LENGTH", 
 
     "download_speed", "aria2_path", "aira2_cmd", "courses_re", "alipay_path"
 ]

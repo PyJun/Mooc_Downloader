@@ -71,7 +71,7 @@ class Icourse163_Mooc(Icourse163_Base):
         names = re.findall(r'name:"(.+)"', text)
         if names:
             title = '__'.join(names)
-            self.title = winre.sub('', title) # 用于除去win文件非法字符
+            self.title = winre.sub('', title)[:WIN_LENGTH] # 用于除去win文件非法字符
 
     def _get_infos(self):
         if self.term_id is None:
@@ -81,18 +81,18 @@ class Icourse163_Mooc(Icourse163_Base):
         text = request_post(self.infos_url, self.infos_data, decoding='unicode_escape')
         chapters = re.findall(r'homeworks=\w+;.+?id=(\d+).+?name="((.|\n)+?)";',text)
         for i,chapter in enumerate(chapters,1):
-            chapter_title = winre.sub('', '{'+str(i)+'}--'+chapter[1])
+            chapter_title = winre.sub('', '{'+str(i)+'}--'+chapter[1])[:WIN_LENGTH]
             self.infos[chapter_title] = {}
             lessons = re.findall(r'chapterId='+chapter[0]+r'.+?contentType=1.+?id=(\d+).+?isTestChecked=false.+?name="((.|\n)+?)".+?test', text)
             for j,lesson in enumerate(lessons,1):
-                lesson_title = winre.sub('', '{'+str(j)+'}--'+lesson[1])
+                lesson_title = winre.sub('', '{'+str(j)+'}--'+lesson[1])[:WIN_LENGTH]
                 self.infos[chapter_title][lesson_title] = {}
                 videos = re.findall(r'contentId=(\d+).+contentType=(1).+id=(\d+).+lessonId=' +
                                 lesson[0] + r'.+name="(.+)"', text)
                 pdfs = re.findall(r'contentId=(\d+).+contentType=(3).+id=(\d+).+lessonId=' +
                                 lesson[0] + r'.+name="(.+)"', text)
-                video_source = [{'params':video[:3], 'name':winre.sub('','[{}.{}.{}]--{}'.format(i,j,k,video[3])).rstrip('.mp4')} for k,video in enumerate(videos,1)]
-                pdf_source = [{'params':pdf[:3], 'name':winre.sub('','({}.{}.{})--{}'.format(i,j,k,pdf[3])).rstrip('.pdf')} for k,pdf in enumerate(pdfs,1)]
+                video_source = [{'params':video[:3], 'name':winre.sub('','[{}.{}.{}]--{}'.format(i,j,k,video[3])).rstrip('.mp4')[:WIN_LENGTH]} for k,video in enumerate(videos,1)]
+                pdf_source = [{'params':pdf[:3], 'name':winre.sub('','({}.{}.{})--{}'.format(i,j,k,pdf[3])).rstrip('.pdf')[:WIN_LENGTH]} for k,pdf in enumerate(pdfs,1)]
                 self.infos[chapter_title][lesson_title]['videos'] = video_source
                 self.infos[chapter_title][lesson_title]['pdfs'] = pdf_source
 
