@@ -173,8 +173,9 @@ class Icourse163_Mooc(Icourse163_Base):
 
 
 def main():
-    url = 'http://www.icourse163.org/course/GDUFS-1002493010'
+    # url = 'http://www.icourse163.org/course/GDUFS-1002493010'
     # url = 'https://www.icourse163.org/course/WHU-1001539003'
+    url = 'https://www.icourse163.org/course/XHDX-1205600803'
     icourse163_mooc = Icourse163_Mooc()
     if (icourse163_mooc.set_mode()):
         icourse163_mooc.prepare(url)

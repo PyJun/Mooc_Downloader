@@ -31,7 +31,7 @@ def mooc_interface():
         while True:
             os.system("cls")
             print("\t"+"="*91)
-            print('\t|\t\t      慕课下载器(免费版v3.4.1)      \tQQ群: {:^27s} |'.format(__QQgroup__))
+            print('\t|\t\t      慕课下载器(免费版v3.4.2)      \tQQ群: {:^27s} |'.format(__QQgroup__))
             print("\t|\t\t    icourse163.org, icourses.cn    \t邮箱: {:^27s} |".format(__email__))
             print("\t"+"="*91)
             print("\t{:^90}".format("Github: https://github.com/PyJun/Mooc_Downloader"))

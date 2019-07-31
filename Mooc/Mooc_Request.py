@@ -34,7 +34,6 @@ def request_decorate(count=3):
                     cnt += 1
                     if cnt >= count:
                         break
-                    # print("continue......")
                     sleep(0.32)
                 except (timeout):
                     break
@@ -74,5 +73,5 @@ def request_head(url):
 def request_check(url):
     '''检查url是否可以访问'''
     req = request.Request(url=url);
-    response = request.urlopen(req, timeout=TIMEOUT)
+    response = request.urlopen(req, timeout=TIMEOUT//10)
     response.close()
