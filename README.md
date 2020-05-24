@@ -6,7 +6,7 @@
 - 用 Python3.6 urllib3 模块爬虫，所有涉及模块均为标准库，打包后体积小，不到10M
 - 支持Mooc视频，字幕，课件下载，课程以目录树形式下载到硬盘，支持Potplayer播放
 - 支持中国大学慕课和爱课程二大慕课网站的视频课程下载，核心下载调用 Aria2c
-- 用户可以直接下载 Release 下的 [学无止下载器-V1.6.1](https://github.com/PyJun/Mooc_Downloader/releases)  安装即可使用
+- 用户可以直接下载 Release 下的 [学无止下载器-V1.6.2](https://github.com/PyJun/Mooc_Downloader/releases)  安装即可使用
 - 有关下载器的使用以及相关问题，点击查看[Mooc下载器帮助文档](https://github.com/PyJun/Mooc_Downloader/wiki)
 
 ##### 2. 功能演示：
