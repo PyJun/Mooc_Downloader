@@ -11,9 +11,9 @@
 
 ##### 2. 功能演示：
 
-![demo1.png](http://118.31.48.9/images/demo1.png)
+![demo1.png](http://xuewuzhi.cn/images/demo1.png)
 
-![demo2.png](http://118.31.48.9/images/demo2.png)
+![demo2.png](http://xuewuzhi.cn/images/demo2.png)
 
 ##### 4.项目文件
 
@@ -59,5 +59,5 @@ python -m Mooc
 
 3. 最后会在项目工程根目录下出现一个**dist**文件夹，该文件夹会出现一个**Mooc-3.4.0.exe**程序
 
-![package.png](http://118.31.48.9/images/package.png)
+![package.png](http://xuewuzhi.cn/images/package.png)
 
