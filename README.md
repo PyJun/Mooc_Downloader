@@ -62,5 +62,6 @@ python -m Mooc
 ![package.png](http://xuewuzhi.cn/images/package.png)
 
 
-4. 项目代码已好久未更新，Releases下有我打包好的exe文件，可直接下载使用~
+##### 7.注意事项
+项目代码已好久未更新，Releases下有我打包好的exe文件，可直接下载使用~
 
