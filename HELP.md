@@ -5,13 +5,13 @@
 ------
 
 1. [Github Releases](https://github.com/PyJun/Mooc_Downloader/releases)
-2. [百度云链接](https://pan.baidu.com/s/1yxM_AnVs8r-7sYaGixEptQ)
+2. [百度云链接](https://pan.baidu.com/s/1rP5Q66j1xF3D5l5iAL335g)
 
 #### 二. 使用说明
 
 ------
 
-##### 1.从中国大学官网 **icourse163.org** 或者爱课程官网 **icourses.cn**下选择任意一个课程复制其网址，如下图：
+##### 1.从课程官网下选择任意一个课程复制其网址，如下图：
 
 ![复制官方课程网址](./图片/copy1.png)
 
@@ -33,6 +33,8 @@
 
 1. [中国大学慕课官网](https://www.icourse163.org/)
 2. [爱课程官网](http://www.icourses.cn)
+3. [网易云课堂](https://study.163.com/)
+4. [学堂在线](https://next.xuetangx.com/)
 
 有关更多慕课网站的课程下载，敬请期待
 

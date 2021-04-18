@@ -21,6 +21,7 @@ class DownloadFailed(Exception):
 def aria2_download_file(url, filename, dirname='.'):
     cnt = 0
     while cnt < 3:
+        p = None
         try:
             cmd = aira2_cmd.format(url=url, dirname=dirname, filename=filename)
             p = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE, universal_newlines=True, encoding='utf8')
@@ -54,7 +55,8 @@ def aria2_download_file(url, filename, dirname='.'):
                     print('\r  |-['+LENGTH*'*'+'] {:.0f}% {:.2f}M/s'.format(100,ave_speed),end='  (完成)    \n')
                 return
         finally:
-            p.kill()   # 保证子进程已终止
+            if p:
+                p.kill()   # 保证子进程已终止
     clear_files(dirname, filename)
     raise DownloadFailed("download failed")
 

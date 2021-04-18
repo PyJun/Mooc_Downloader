@@ -90,8 +90,8 @@ def mooc_interface():
     except KeyboardInterrupt:
         input("程序退出...")
     finally:
-        if (input("\n小哥哥，小姐姐，打个赏再走呗 …(⊙_⊙)… [y/n]: ") != 'n'):
-            os.startfile(alipay_path)
+        # if (input("\n小哥哥，小姐姐，打个赏再走呗 …(⊙_⊙)… [y/n]: ") != 'n'):
+        #     os.startfile(alipay_path)
         os.system("pause")
 
 def inquire():

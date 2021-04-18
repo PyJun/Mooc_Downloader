@@ -9,7 +9,7 @@ import re
 
 # 常量，固定参数
 __QQgroup__ = "196020837"
-__email__  = "py.jun@qq.com  ze.ga@qq.com"
+__email__  = "py.jun@qq.com"
 if hasattr(sys, 'frozen'):
     PATH = os.path.dirname(sys.executable)
 else:
@@ -30,7 +30,7 @@ pause
 LENGTH = 80
 
 # 变量，可修改的参数
-download_speed = "1248K"
+download_speed = "0"
 if getattr(sys, 'frozen', False): #是否打包
     aria2_path = os.path.join(sys._MEIPASS, "aria2c.exe")
     alipay_path = os.path.join(sys._MEIPASS, "Alipay.jpg")
