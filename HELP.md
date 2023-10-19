@@ -1,4 +1,6 @@
-### 慕课下载器帮助文档
+### 学无止网课下载器帮助文档
+
+
 
 #### 一.  软件下载：
 
@@ -6,6 +8,9 @@
 
 1. [Github Releases](https://github.com/PyJun/Mooc_Downloader/releases)
 2. [百度云链接](https://pan.baidu.com/s/1rP5Q66j1xF3D5l5iAL335g)
+3. [蓝奏云](https://pyjun.lanzoui.com/b00n4ln4b)
+
+
 
 #### 二. 使用说明
 
@@ -13,28 +18,43 @@
 
 ##### 1.从课程官网下选择任意一个课程复制其网址，如下图：
 
-![复制官方课程网址](./图片/copy1.png)
+![](http://118.31.48.9/images/downloader/copy1.png)
 
-![](./图片/copy2.png)
+![](http://118.31.48.9/images/downloader/copy2.png)
 
-##### 2.然后粘贴到 Mooc.exe 的程序中，并按要求输入指令，会自动下载相应课程的视频和课件，如下图：
 
-![](./图片/demo1.png)
 
-![](./图片/demo2.png)
+##### 2.然后粘贴到下载器中，并按要求输入指令，会自动下载相应课程的视频和课件，如下图：
+
+![](http://118.31.48.9/images/downloader/demo1.png)
+
+![](http://118.31.48.9/images/downloader/demo2.png)
+
+
 
 #### 三.常见问题
 
 ------
 
-##### 1.Mooc下载器支持哪些网站的视频下载？
+##### 1.学无止下载器支持哪些网站的视频下载？
 
-答：目前已支持中国大学慕课和爱课程的所有免费视频课程下载，官方网址如下：
+答：目前已支持以下慕课网站视频课程下载，官方网址如下：
 
 1. [中国大学慕课官网](https://www.icourse163.org/)
-2. [爱课程官网](http://www.icourses.cn)
-3. [网易云课堂](https://study.163.com/)
-4. [学堂在线](https://next.xuetangx.com/)
+2. [腾讯课堂](https://ke.qq.com/)
+3. [爱课程官网](http://www.icourses.cn/)
+4. [网易云课堂](https://study.163.com/)
+5. [有道精品课](https://ke.youdao.com/)
+6. [学堂在线](https://next.xuetangx.com/)
+7. [慕课网](http://www.imooc.com/)
+8. [超星学习通(学银在线)](http://www.xueyinonline.com/)
+9. [知到智慧树](https://www.zhihuishu.com/)
+10. [小鹅通](https://study.xiaoe-tech.com/)
+11. [千聊](https://www.qlchat.com/)
+12. [智慧职教](https://www.icve.com.cn/)
+13. [中公网校](https://www.eoffcn.com/)
+14. [学浪/抖音课堂](https://www.xuelangapp.com/)
+
 
 有关更多慕课网站的课程下载，敬请期待
 
@@ -43,7 +63,7 @@
 答：若课程有前几次开课，选择图片的版本一般选择最近一次的开课，然后复制链接进行下载。
 PS：关于每次开课内容一般大致相同，新课程可能会有少量更新等。一般不会影响学习。
 
-![图片](./图片/help1.png)
+![图片](http://118.31.48.9/images/downloader/help1.png)
 
 ------
 
@@ -53,7 +73,7 @@ PS：关于每次开课内容一般大致相同，新课程可能会有少量更
 
 ##### 4.收费视频可以下载吗？
 
-答：因为版权问题，收费视频该软件不提供下载
+答：因为版权问题，未购买的收费视频该软件不提供下载
 
 ##### 5. “播放列表.dpl” 文件有什么用？
 
@@ -68,12 +88,4 @@ PS：关于每次开课内容一般大致相同，新课程可能会有少量更
 ##### 7.软件出现请求异常和下载异常的问题？
 
 答：一般情况是你的本地网络出现的问题，请检查网络是否正常连接。如果确认网络良好还是出现了这样的问题，那么欢迎反馈给我们
-
-##### 8.该软件开源了吗？
-
-答：软件所有源代码已经上传至 GitHub
-
-项目地址：**https://github.com/PyJun/Mooc_Downloader**
-
-作者邮箱：**py.jun@qq.com**
 
