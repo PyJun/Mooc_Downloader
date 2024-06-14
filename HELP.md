@@ -49,7 +49,6 @@
 7. [慕课网](http://www.imooc.com/)
 8. [超星学习通(学银在线)](http://www.xueyinonline.com/)
 9. [知到智慧树](https://www.zhihuishu.com/)
-10. [小鹅通](https://study.xiaoe-tech.com/)
 11. [千聊](https://www.qlchat.com/)
 12. [智慧职教](https://www.icve.com.cn/)
 13. [中公网校](https://www.eoffcn.com/)
