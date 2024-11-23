@@ -7,8 +7,8 @@
 ------
 
 1. [Github Releases](https://github.com/PyJun/Mooc_Downloader/releases)
-2. [百度云链接](https://pan.baidu.com/s/1rP5Q66j1xF3D5l5iAL335g)
-3. [蓝奏云](https://pyjun.lanzoui.com/b00n4ln4b)
+2. [百度云链接](https://pan.baidu.com/s/1G43ZZCTc5XtYCeZWUs4uTA)
+3. [蓝奏云](https://lanzouw.com/b00n4ln4b)
 
 
 
@@ -38,21 +38,30 @@
 
 ##### 1.学无止下载器支持哪些网站的视频下载？
 
-答：目前已支持以下慕课网站视频课程下载，官方网址如下：
+答：目前已支持以下网课网站视频课程下载，官方网址如下：
 
-1. [中国大学慕课官网](https://www.icourse163.org/)
-2. [腾讯课堂](https://ke.qq.com/)
-3. [爱课程官网](http://www.icourses.cn/)
-4. [网易云课堂](https://study.163.com/)
-5. [有道精品课](https://ke.youdao.com/)
-6. [学堂在线](https://next.xuetangx.com/)
-7. [慕课网](http://www.imooc.com/)
-8. [超星学习通(学银在线)](http://www.xueyinonline.com/)
-9. [知到智慧树](https://www.zhihuishu.com/)
-11. [千聊](https://www.qlchat.com/)
-12. [智慧职教](https://www.icve.com.cn/)
-13. [中公网校](https://www.eoffcn.com/)
-14. [学浪/抖音课堂](https://www.xuelangapp.com/)
+1. [腾讯课堂](https://ke.qq.com/)
+2. [网易云课堂](https://study.163.com/)
+3. [有道精品课](https://ke.youdao.com/)
+4. [有道领世](https://c.youdao.com/ydls/pc-download.html)
+5. [高途课堂](https://www.gaotu.cn/)
+6. [途途课堂](https://gaotu100.com/)
+7. [高途高中规划](https://www.gtgz.cn/)
+8. [中国大学](https://www.icourse163.org/)
+9. [哔哩哔哩](https://www.bilibili.com/)
+10. [抖音课堂](https://www.xuelangapp.com/)
+11. [中公网校](https://www.eoffcn.com/)
+12. [新东方在线](https://www.koolearn.com/)
+13. [新东方云教室](https://roombox.xdf.cn/)
+14. [伯索云学堂](https://www.plaso.cn/app/)
+15. [橙啦](https://www.orangevip.com/)
+16. [千聊](https://www.qlchat.com/)
+17. [兴趣岛](https://m.qianliao.net/)
+18. [超星学习通(学银在线)](http://www.xueyinonline.com/)
+19. [知到智慧树](https://www.zhihuishu.com/)
+20. [智慧职教(职教云)](https://www.icve.com.cn/)
+21. [爱课程](http://www.icourses.cn/)
+22. [学堂在线](https://next.xuetangx.com/)
 
 
 有关更多慕课网站的课程下载，敬请期待
